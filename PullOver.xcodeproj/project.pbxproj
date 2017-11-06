@@ -12,6 +12,9 @@
 		2924143C1FB024AA002588BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2924143B1FB024AA002588BE /* Assets.xcassets */; };
 		2924143F1FB024AA002588BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2924143D1FB024AA002588BE /* LaunchScreen.storyboard */; };
 		2924144A1FB024AA002588BE /* PullOverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292414491FB024AA002588BE /* PullOverTests.swift */; };
+		2924145A1FB026E4002588BE /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 292414591FB026E4002588BE /* Keys.plist */; };
+		2924145C1FB02726002588BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2924145B1FB02726002588BE /* LoginViewController.swift */; };
+		2924145D1FB02726002588BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2924145B1FB02726002588BE /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 		292414451FB024AA002588BE /* PullOverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullOverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292414491FB024AA002588BE /* PullOverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullOverTests.swift; sourceTree = "<group>"; };
 		2924144B1FB024AA002588BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292414591FB026E4002588BE /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		2924145B1FB02726002588BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,7 @@
 				2924143B1FB024AA002588BE /* Assets.xcassets */,
 				2924143D1FB024AA002588BE /* LaunchScreen.storyboard */,
 				292414401FB024AA002588BE /* Info.plist */,
+				292414591FB026E4002588BE /* Keys.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -114,6 +120,7 @@
 		292414561FB024BF002588BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2924145B1FB02726002588BE /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2924145A1FB026E4002588BE /* Keys.plist in Resources */,
 				2924143F1FB024AA002588BE /* LaunchScreen.storyboard in Resources */,
 				2924143C1FB024AA002588BE /* Assets.xcassets in Resources */,
 				2924143A1FB024AA002588BE /* Main.storyboard in Resources */,
@@ -236,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2924145C1FB02726002588BE /* LoginViewController.swift in Sources */,
 				292414351FB024AA002588BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2924145D1FB02726002588BE /* LoginViewController.swift in Sources */,
 				2924144A1FB024AA002588BE /* PullOverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +401,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
-				INFOPLIST_FILE = PullOver/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PullOver/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewhsingleton.PullOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,7 +417,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
-				INFOPLIST_FILE = PullOver/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PullOver/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewhsingleton.PullOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
